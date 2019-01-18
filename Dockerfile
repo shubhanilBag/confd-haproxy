@@ -6,6 +6,8 @@ ADD https://github.com/kelseyhightower/confd/releases/download/v${CONFD_VERSION}
 
 RUN mkdir -p /etc/confd/conf.d /etc/confd/templates
 
+RUN apt-get update && apt-get install -y curl
+
 RUN mv /tmp/confd-0.16.0-linux-amd64 /usr/local/bin/confd && \
     chmod +x /usr/local/bin/confd
 

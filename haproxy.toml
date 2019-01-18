@@ -10,4 +10,5 @@ reload_cmd = "haproxy -f /usr/local/etc/haproxy/haproxy.cfg -p /var/run/haproxy.
 
 keys = [
     "/members/",
+    "/haproxy/",
 ]
